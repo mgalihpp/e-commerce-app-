@@ -6,7 +6,7 @@ const Banner = () => {
         <div className="banner">
             <h2>BEBAS ONGKIR</h2>
             <p>VOUCHER DISKON HINGGA 100%</p>
-            <button><a href='/#produk-1'>Belanja Sekarang</a></button>
+            <button><a href='#produk-1'>Belanja Sekarang!</a></button>
         </div>
     )
 }

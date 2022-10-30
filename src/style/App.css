@@ -47,7 +47,7 @@ p {
 }
 
 .section-p1 {
-    padding: 120px 25px 50px 25px;
+    padding: 120px 0px 50px 20px;
 }
 
 .section-m1 {
@@ -149,9 +149,8 @@ body {
     text-align: center;
 }
 .banner button {
-    width: 100%;
     background: rgba(0, 0, 0, 0.342);
-    border-radius: 50px;
+    border-radius: 10px;
     color: aquamarine;
     border: 0;
     padding: 20px 80px 14px 65px;
@@ -159,7 +158,7 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 1px;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .banner button:hover {
@@ -171,6 +170,8 @@ body {
     font-size: 15px;
     text-decoration: none;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* produk */
@@ -189,7 +190,8 @@ body {
 
 #produk-1 .produk {
     display: flex;
-    gap: 20px;
+    padding-left: 10px;
+    gap: 25px;
     padding-top: 20px;
     overflow-x: auto;
 }
@@ -315,7 +317,7 @@ body {
 #produk-2 .produk-box .isi h5 {
     padding-top: 7px;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #produk-2 .produk-box .isi i {
@@ -634,7 +636,7 @@ body {
 
 
 @media (max-width:799px) {
-    #header{
+    .header{
         padding: 20px 20px;
     }
 
@@ -651,7 +653,7 @@ body {
         font-size: 15px;
     } 
 
-    #banner {
+    .banner {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -661,26 +663,26 @@ body {
         margin-top: 0px;
     }
 
-    #banner h2,p {
+    .banner h2,p {
         padding: 0px 0px 0px 0px;
     }
 
-    #banner h2 {
+    .banner h2 {
         font-size: 35px;
         width: 100%;
     }
 
-    #banner p {
+    .banner p {
         font-size: 15px;
         width: 100%;
     }
     
-    #banner button a {
+    .banner button a {
         font-size: 15px;
         width: 100%;
     }
 
-    #navbar {
+    .navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -695,11 +697,11 @@ body {
         padding: 80px 0 0 10px;
         transition: 0.3s ease;
     }
-    #navbar.active {
+    .navbar.active {
         right: 0px;
     }
 
-    #navbar li {
+    .navbar li {
         margin-bottom: 25px;
     }
     #mobile {
@@ -725,7 +727,7 @@ body {
         display: none;
     }
 
-    #banner {
+    .banner {
         height: 100vh;
     }
 

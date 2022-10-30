@@ -1,0 +1,64 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+
+.login-box {
+    margin: auto;
+    width: 50%;
+    padding: 16px;
+    background-color: rgb(222, 222, 222);
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.login-box h1 {
+    color: black;
+    text-align: center;
+}
+
+.login-box hr {
+    margin: 10px;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.regisBtn {
+    background-color: teal;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.regisBtn:hover {
+    opacity: 100%;
+}

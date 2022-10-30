@@ -1,17 +1,22 @@
-import Banner from "./components/Banner";
-import Navbar from "./components/Navbar";
-import Product from "./components/Product";
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
-    <>
-    <>
-    <Navbar />
-    <Banner />
-    <Product />
-    </>
-    </>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

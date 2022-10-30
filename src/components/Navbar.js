@@ -2,6 +2,7 @@ import React from "react";
 
 import '../style/App.css';
 import logo from '../img/logo.png';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return(
@@ -18,9 +19,9 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <Link to="/About"><a href="/">
                         ABOUT
-                    </a>
+                    </a></Link>
                 </li>
                 <li>
                     <a href="/">
@@ -28,9 +29,9 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <Link to="/Contact"><a href="/">
                         CONTACT
-                    </a>
+                    </a></Link>
                 </li>
                 <li>
                     <a href="/" className="bag">
@@ -38,6 +39,10 @@ const Navbar = () => {
                         </i>
                     </a>
                 </li>
+            </div>
+            <div id="mobile">
+                <li><a href="/"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <i id="bar" className="fas fa-bars"></i>
             </div>
         </div>
     )
